@@ -2,21 +2,22 @@
 
 Cloudflare DNS backup tool
 
+Based on official [cloudflare](https://github.com/cloudflare/python-cloudflare) library.
+
 ## Installation instructions
 
-via pip
+with pip (automatically):
 
     pip install git+https://github.com/nordicdyno/cfbackup@master
     cfbackup -h
 
-whithout pip
+without pip (manually, installation dependencies is up to you):
 
     git clone https://github.com/nordicdyno/cfbackup
     cd cfbackup
     python -c "from cfbackup.__main__ import main; main()" -h
 
 ## How to use
-
 
 ### Set environment variables
 
@@ -46,6 +47,7 @@ Dump DNS records data as JSON array in file:
 * `restore` command
 * man page
 * PyPI publication
+* git tags for releases
 
 ### MAYBE
 
