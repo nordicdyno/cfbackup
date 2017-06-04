@@ -18,7 +18,7 @@ whithout pip
 ## How to use
 
 
-### 2. Set environment variables
+### Set environment variables
 
 ```bash
  export CF_API_EMAIL=<your@ema.il>
@@ -27,7 +27,7 @@ whithout pip
 
 * [Where do I find my Cloudflare API key?](https://support.cloudflare.com/hc/en-us/articles/200167836-Where-do-I-find-my-Cloudflare-API-key-)
 
-### 3. Run commands
+### Run commands
 
 Show zones:
 
