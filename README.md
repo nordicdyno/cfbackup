@@ -33,13 +33,13 @@ Show zones:
 
     cfbackup show zones --pretty
 
-Show all DNS records with stats
+Show all DNS records with stats:
 
     cfbackup show dns -z <zone-name> --pretty
 
 Dump DNS records data as JSON array in file:
 
-    cfbackup show dns -z <zone-name> --pretty
+    cfbackup show dns -z <zone-name> > backup_<zone-name>.json
 
 ## TODO
 
