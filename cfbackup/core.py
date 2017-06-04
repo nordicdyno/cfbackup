@@ -134,6 +134,13 @@ class CF_Zones(object):
 
     def _all_zones(self):
         cf = CloudFlare.CloudFlare(raw=True)
+        if self._ctx.zone_name:
+            raw_results = cf.zones.get(params={
+                'name': self._ctx.zone_name,
+                'per_page': 1,
+                'page': 1,
+            })
+            return raw_results['result']
 
         page = 1
         domains = []
@@ -174,17 +181,23 @@ def main():
         help='Object of command',
         dest="object"
     )
+
     parser_zones = subparsers.add_parser("zones")
     parser_zones.add_argument(
         "--pretty",
         action='store_true',
         help="show user friendly output",
     )
+    parser_zones.add_argument(
+        "-z", "--zone-name",
+        help="optional zone name",
+    )
+
     parser_dns = subparsers.add_parser("dns")
     parser_dns.add_argument(
         "-z", "--zone-name",
         required=True,
-        help="Zone name",
+        help="required zone name",
     )
     parser_dns.add_argument(
         "--pretty",
