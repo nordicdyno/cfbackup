@@ -1,6 +1,4 @@
-# cfbackup
-
-Cloudflare DNS backup tool
+# cfbackup: Cloudflare DNS backup tool
 
 Based on official [cloudflare](https://github.com/cloudflare/python-cloudflare) library.
 
