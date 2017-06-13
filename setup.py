@@ -10,6 +10,7 @@ setup(
     name='cfbackup',
     version=cfbackup.__version__,
     description=cfbackup.__doc__.strip(),
+    url='https://github.com/nordicdyno/cfbackup',
     download_url='https://github.com/nordicdyno/cfbackup',
     author=cfbackup.__author__,
     author_email='nordicdyno@gmail.coms',
